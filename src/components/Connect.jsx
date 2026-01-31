@@ -1,0 +1,57 @@
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { SiPeerlist } from "react-icons/si";
+
+const links = [
+  {
+    name: "LinkedIn",
+    icon: FaLinkedin,
+    color: "text-[#0A66C2]",
+    href: "#",
+  },
+  {
+    name: "GitHub",
+    icon: FaGithub,
+    color: "text-white",
+    href: "#",
+  },
+  {
+    name: "Twitter",
+    icon: FaTwitter,
+    color: "text-white",
+    href: "#",
+  },
+  {
+    name: "Email",
+    icon: MdEmail,
+    color: "text-[#EA4335]",
+    href: "#",
+  },
+  {
+    name: "Peerlist",
+    icon: SiPeerlist,
+    color: "text-[#00AA45]",
+    href: "#",
+  },
+];
+
+export default function Connect() {
+  return (
+    <div className="flex flex-wrap gap-4">
+      {links.map((item) => {
+        const Icon = item.icon;
+        return (
+          <a
+            key={item.name}
+            href={item.href}
+          className="flex items-center gap-3 px-6 py-3 bg-[#0b0b0b] border border-border rounded-xl hover:border-gray-600 hover:shadow-[0_0_15px_#111] transition"
+
+          >
+            <Icon className={`text-xl ${item.color}`} />
+            <span className="text-gray-200">{item.name}</span>
+          </a>
+        );
+      })}
+    </div>
+  );
+}
