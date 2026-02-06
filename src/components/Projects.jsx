@@ -15,8 +15,8 @@ const allProjects = [
       "Designed complete healthcare workflow from scratch.",
     ],
     tech: ["Python", "Flask", "MySQL", "Stripe", "Socket.IO", "HTML", "CSS", "JavaScript"],
-    repo: "https://github.com/YOUR_USERNAME/e-chikitsalaya",
-    live: "#",
+    repo: "https://github.com/GAGGZ1/Hospital-System-Video-Calling-with-Doctors-",
+    live: "https://github.com/GAGGZ1/Hospital-System-Video-Calling-with-Doctors-"
   },
   {
     name: "Travel Story – Personal Travel Timeline (MERN)",
@@ -29,8 +29,8 @@ const allProjects = [
       "Dynamic responsive UI built with React.",
     ],
     tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    repo: "https://github.com/YOUR_USERNAME/travel-story",
-    live: "#",
+    repo: "https://github.com/GAGGZ1/Travel-Story",
+    live: "https://travel-story-1-q16j.onrender.com",
   },
   {
     name: "AI Note-Taking Assistant (NextJS + OpenAI + DALL·E)",
@@ -44,7 +44,7 @@ const allProjects = [
     ],
     tech: ["NextJS", "TypeScript", "OpenAI", "DALL·E", "DrizzleORM", "Tailwind"],
     repo: "https://github.com/GAGGZ1/AI-Note-Taking-Assistant",
-    live: "#",
+    live: "https://ai-note-taking-assistant-two.vercel.app/",
   },
   {
     name: "Flask Blog – Dynamic Web Application",
@@ -57,8 +57,8 @@ const allProjects = [
       "Secure and optimized backend architecture.",
     ],
     tech: ["Python", "Flask", "SQLAlchemy", "Jinja2", "HTML", "CSS", "JavaScript"],
-    repo: "https://github.com/YOUR_USERNAME/flask-blog",
-    live: "#",
+    repo: "https://github.com/GAGGZ1/Flask-Blog/",
+    live: "https://github.com/GAGGZ1/Flask-Blog/",
   },
   {
     name: "CodePlayground – Live HTML/CSS/JS Editor",
@@ -70,8 +70,8 @@ const allProjects = [
       "Pure JavaScript DOM manipulation and event handling.",
     ],
     tech: ["HTML", "CSS", "JavaScript"],
-    repo: "https://github.com/YOUR_USERNAME/codeplayground",
-    live: "#",
+    repo: "https://github.com/GAGGZ1/CodePlayground",
+    live: "https://gaggz1.github.io/CodePlayground/",
   },
   {
     name: "React Weather App",
@@ -83,8 +83,8 @@ const allProjects = [
       "Error handling for invalid cities.",
     ],
     tech: ["React", "MUI", "API", "CSS"],
-    repo: "https://github.com/YOUR_USERNAME/weather-app",
-    live: "#",
+    repo: "https://github.com/GAGGZ1/react-weather-app",
+    live: "https://react-weather-app-eight-smoky.vercel.app/",
   },
   {
     name: "To-Do List App (Flask)",
@@ -97,7 +97,7 @@ const allProjects = [
     ],
     tech: ["Python", "Flask", "SQLite", "HTML", "CSS"],
     repo: "https://github.com/GAGGZ1/To-Do-List-Python-and-Flask-",
-    live: "#",
+    live: "https://todo-web-app-vhk5.onrender.com/",
   },
   {
     name: "Frontend Mini Projects Collection",
@@ -109,7 +109,7 @@ const allProjects = [
       "Responsive Tailwind CSS landing page.",
     ],
     tech: ["HTML", "CSS", "JavaScript", "Tailwind"],
-    repo: "https://github.com/YOUR_USERNAME",
+    repo: "https://github.com/GAGGZ1?tab=repositories",
     live: "https://gaggz1.github.io/tailwind-landing-page/",
   },
 ];
@@ -178,6 +178,7 @@ export default function Projects() {
             <div className="flex items-center gap-6">
               <a
                 href={project.repo}
+                target="_blank"
                 className="flex items-center gap-2 text-gray-400 hover:text-white"
               >
                 <FaGithub />
@@ -186,6 +187,7 @@ export default function Projects() {
 
               <a
                 href={project.live}
+                target="_blank"
                 className="flex items-center gap-2 text-orange-400 hover:text-orange-300"
               >
                 Visit <HiArrowRight />
