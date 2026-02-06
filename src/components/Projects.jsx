@@ -4,63 +4,116 @@ import { HiArrowRight } from "react-icons/hi";
 
 const allProjects = [
   {
-    name: "GitGenius",
+    name: "e-Chikitsalaya – Telemedicine Platform",
     short:
-      "AI-powered CLI tool for analyzing Git commits, generating changelogs, and semantic search using LangChain and Gemini.",
+      "Full-stack healthcare platform with appointments, Stripe payments, real-time video calls, chatbot, and messaging system.",
     details: [
-      "AI-powered commit analysis and categorization using Google Gemini.",
-      "Semantic search — ask questions in natural language about your codebase.",
-      "Auto-generate professional changelogs grouped by category.",
-      "Export reports in JSON, Markdown, CSV, or beautiful HTML.",
-      "Incremental processing — only analyze new commits.",
+      "Built using Flask, MySQL, Socket.IO for real-time video consultations.",
+      "Integrated Stripe for secure appointment payments.",
+      "Chatbot, messaging system, dark/light mode for enhanced UX.",
+      "Doctor–patient booking workflow with authentication and DB models.",
+      "Designed complete healthcare workflow from scratch.",
     ],
-    tech: ["Node.js", "LangChain", "Gemini API", "Prisma", "SQLite"],
-    repo: "#",
+    tech: ["Python", "Flask", "MySQL", "Stripe", "Socket.IO", "HTML", "CSS", "JavaScript"],
+    repo: "https://github.com/YOUR_USERNAME/e-chikitsalaya",
     live: "#",
   },
   {
-    name: "FlowPay",
+    name: "Travel Story – Personal Travel Timeline (MERN)",
     short:
-      "A simulated wallet system enabling peer-to-peer transfers and balance additions through a simulated bank.",
+      "Secure MERN app to create, edit, delete travel stories with images, JWT auth, filters, and pinning.",
     details: [
-      "Wallet simulation with transaction history.",
-      "Peer-to-peer transfers and validation.",
-      "Authentication and session handling.",
+      "JWT authentication and protected routes.",
+      "Image uploads with date-based filtering and story pinning.",
+      "REST APIs using Node.js and Express.",
+      "Dynamic responsive UI built with React.",
     ],
-    tech: ["React", "Node.js", "MongoDB"],
-    repo: "#",
+    tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+    repo: "https://github.com/YOUR_USERNAME/travel-story",
     live: "#",
   },
   {
-    name: "Feed-Wall",
+    name: "AI Note-Taking Assistant (NextJS + OpenAI + DALL·E)",
     short:
-      "A platform to collect feedback via embeddable widgets, analyze feedback, and generate AI-powered summaries.",
+      "AI-powered note assistant with autocomplete, OpenAI integration, and image generation using DALL·E.",
     details: [
-      "Embeddable feedback widget for websites.",
-      "AI-powered feedback summarization.",
-      "Admin dashboard with analytics.",
+      "Built with NextJS 13 App Router and TypeScript.",
+      "OpenAI API for smart note writing and autocomplete.",
+      "DALL·E integration for AI image generation.",
+      "Drizzle ORM and modern UI using Shadcn + Tailwind.",
     ],
-    tech: ["Next.js", "PostgreSQL", "Prisma"],
-    repo: "#",
+    tech: ["NextJS", "TypeScript", "OpenAI", "DALL·E", "DrizzleORM", "Tailwind"],
+    repo: "https://github.com/GAGGZ1/AI-Note-Taking-Assistant",
     live: "#",
   },
   {
-    name: "Extra Project 1",
-    short: "Appears only when you click More Projects.",
-    details: ["Extra project details here."],
-    tech: ["Tech1", "Tech2"],
-    repo: "#",
+    name: "Flask Blog – Dynamic Web Application",
+    short:
+      "Secure Flask blog with authentication, image uploads, date search, and optimized DB models.",
+    details: [
+      "User authentication using Flask-Login and Flask-WTF.",
+      "Image upload feature and date-based search.",
+      "SQLAlchemy database models with session handling.",
+      "Secure and optimized backend architecture.",
+    ],
+    tech: ["Python", "Flask", "SQLAlchemy", "Jinja2", "HTML", "CSS", "JavaScript"],
+    repo: "https://github.com/YOUR_USERNAME/flask-blog",
     live: "#",
   },
   {
-    name: "Extra Project 2",
-    short: "Another hidden project.",
-    details: ["More details here."],
-    tech: ["TechA", "TechB"],
-    repo: "#",
+    name: "CodePlayground – Live HTML/CSS/JS Editor",
+    short:
+      "Browser-based live code editor to write and preview HTML, CSS, and JS in real time.",
+    details: [
+      "Separate panels for HTML, CSS, and JS input.",
+      "Live DOM preview without any frameworks.",
+      "Pure JavaScript DOM manipulation and event handling.",
+    ],
+    tech: ["HTML", "CSS", "JavaScript"],
+    repo: "https://github.com/YOUR_USERNAME/codeplayground",
     live: "#",
+  },
+  {
+    name: "React Weather App",
+    short:
+      "Weather app using OpenWeatherMap API with dynamic backgrounds and search functionality.",
+    details: [
+      "API integration with OpenWeatherMap.",
+      "Dynamic UI updates using React hooks.",
+      "Error handling for invalid cities.",
+    ],
+    tech: ["React", "MUI", "API", "CSS"],
+    repo: "https://github.com/YOUR_USERNAME/weather-app",
+    live: "#",
+  },
+  {
+    name: "To-Do List App (Flask)",
+    short:
+      "Simple task manager with add/delete functionality using Flask and SQLite.",
+    details: [
+      "CRUD operations with Flask.",
+      "Lightweight SQLite database.",
+      "Clean UI with server-side rendering.",
+    ],
+    tech: ["Python", "Flask", "SQLite", "HTML", "CSS"],
+    repo: "https://github.com/GAGGZ1/To-Do-List-Python-and-Flask-",
+    live: "#",
+  },
+  {
+    name: "Frontend Mini Projects Collection",
+    short:
+      "Collection of beginner frontend projects: RGB Generator, Amazon Clone, Tailwind Landing Page.",
+    details: [
+      "RGB color generator with clipboard copy.",
+      "Amazon clone using HTML & CSS.",
+      "Responsive Tailwind CSS landing page.",
+    ],
+    tech: ["HTML", "CSS", "JavaScript", "Tailwind"],
+    repo: "https://github.com/YOUR_USERNAME",
+    live: "https://gaggz1.github.io/tailwind-landing-page/",
   },
 ];
+
 
 export default function Projects() {
   const [openIndex, setOpenIndex] = useState(null);

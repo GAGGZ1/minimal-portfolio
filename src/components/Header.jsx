@@ -2,14 +2,13 @@ import { FaGithub } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 import { HiFolder } from "react-icons/hi2";
+import { FaApple } from "react-icons/fa";
 
 export default function Header() {
   return (
     <div className="mb-20">
       {/* Name */}
-      <h1 className="text-4xl md:text-6xl font-semibold mb-3">
-    Gagan Chauhan
-      </h1>
+      <h1 className="text-4xl md:text-6xl font-semibold mb-3">Gagan Chauhan</h1>
 
       {/* Role */}
       <p className="text-gray-400 text-lg md:text-xl mb-4">
@@ -18,8 +17,8 @@ export default function Header() {
 
       {/* Value statement */}
       <p className="text-gray-500 max-w-2xl leading-relaxed mb-8">
-        I design and build scalable full-stack applications with clean UI,
-        solid backend architecture, and real-world impact.
+        I design and build scalable full-stack applications with clean UI, solid
+        backend architecture, and real-world impact.
       </p>
 
       {/* Buttons */}
@@ -42,7 +41,8 @@ export default function Header() {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1-VPdut8cHWvaDTZgZNuOe8M2Ty_VApJ4/view?usp=sharing"   target="_blank"
+          href="https://drive.google.com/file/d/1-VPdut8cHWvaDTZgZNuOe8M2Ty_VApJ4/view?usp=sharing"
+          target="_blank"
           className="flex items-center gap-2 px-6 py-3 bg-[#0b0b0b] border border-[#2a2a2a] rounded-xl hover:border-gray-600 transition"
         >
           <HiOutlineDocumentText className="text-lg text-gray-300" />
@@ -55,6 +55,14 @@ export default function Header() {
         >
           <MdEmail className="text-lg text-red-400" />
           Contact
+        </a>
+        <a
+          href="https://gaggz1.github.io/gagan-portfolio/"
+          target="_blank"
+          className="flex items-center gap-2 px-6 py-3 bg-[#0b0b0b] border border-[#2a2a2a] rounded-xl hover:border-gray-600 transition"
+        >
+          <FaApple className="text-lg text-gray-300" />
+          macOS Portfolio
         </a>
       </div>
     </div>
